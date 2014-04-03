@@ -6,5 +6,9 @@ install:
 
 script:
   - uname -r
+  - mkdir ../qtservice
+  - wget https://qt.gitorious.org/qt-solutions/qt-solutions/archive/fd22bee22274975c56f1c10d87ee9fd2c0818f83.tar.gz -O ../qtservice/qtservice.tar.gz
+  - tar -xvf ../qtservice/qtservice.tar.gz
+  - ls ../qtservice
   - qmake 
   - make
